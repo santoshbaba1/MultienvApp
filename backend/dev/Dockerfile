@@ -5,7 +5,7 @@ WORKDIR /app
 # Copy code 
 COPY . .
 # Install
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 # Expose port
 EXPOSE 3001
 # Run app
